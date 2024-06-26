@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta  name="description"  content="Tic-Tac-Toe game created using JavaScript and HTML/CSS"/>
+    <meta  name="keywords"  content="tic-tac-toe, tic-tac, game, tic, tac, to, toe, javascript, html, css"/>
+    <meta name="author" content="Mukul Anand" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+    <div id="main">
+        <div id="left">
+            <div id="gameContainer">
+                <!-- Tic-Tac-Toe render dynamically -->
+            </div>
+        </div>
+        <div id="right">
+            <div id="heading">Tic-Tac-Toe</div>
+            <div id="playerTurn">X</div>
+            <div id="timeLeft">Time Left: <span id="timer">10</span> seconds</div>
+            <div id="button-container">
+            <div id="buttons">
+                <div class="button" id="expandButton" onclick="expandGrid(3)">EXPAND TO 3x3</div>
+                <div class="button" id="expandButton" onclick="expandGrid(4)">EXPAND TO 4x4</div>
+                <div class="button" id="expandButton" onclick="expandGrid(5)">EXPAND TO 5x5</div>
+            </div>
+            <div class="button" id="resetButton">RESET</div>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
